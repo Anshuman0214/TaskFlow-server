@@ -5,4 +5,6 @@ export interface IUser {
   isActive: boolean;
   createdAt: Date;
   updatedAt: Date;
+
+  comparePassword(candidatePassword: string): Promise<boolean>;
 }
