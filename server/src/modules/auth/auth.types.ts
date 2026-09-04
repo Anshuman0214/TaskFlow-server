@@ -1,14 +1,3 @@
-export interface RegisterInput {
-  name: string;
-  email: string;
-  password: string;
-}
-
-export interface LoginInput {
-  email: string;
-  password: string;
-}
-
 export interface AuthUserResponse {
   id: string;
   name: string;
@@ -25,4 +14,4 @@ export interface AccessTokenPayload {
 export interface RefreshTokenPayload {
   userId: string;
   sessionId: string;
-}
+}       
